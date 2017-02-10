@@ -1,0 +1,28 @@
+﻿<Window x:Class="Events.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Events"
+        mc:Ignorable="d"
+        Title="Events DEMO" Height="300" Width="250"
+        ResizeMode="NoResize" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5">
+            <TextBlock Text="Owner: " VerticalAlignment="Center"/>
+            <TextBox x:Name="ownerName" HorizontalAlignment="Center" Width="110" Height="25" VerticalAlignment="Center" Margin="3" VerticalContentAlignment="Center"/>
+            <Button x:Name="initializeOwner" Content="Initialize" Height="25" Width="65"/>
+        </StackPanel>
+        <TextBlock x:Name="walletMoney" Text="00" FontSize="60" Foreground="Blue" Grid.Row="1" HorizontalAlignment="Center"/>
+        <TextBlock Text="Add to wallet: " Grid.Row="2" Margin="5"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5">
+            
+        </StackPanel>
+    </Grid>
+</Window>
