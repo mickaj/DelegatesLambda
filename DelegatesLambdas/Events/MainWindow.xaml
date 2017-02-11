@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Events"
         mc:Ignorable="d"
-        Title="Events DEMO" Height="300" Width="250"
+        Title="Events DEMO" Height="230" Width="250"
         ResizeMode="NoResize" Background="Gray">
+    <Window.Resources>
+        <local:Wallet x:Key="myWallet"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -16,13 +19,20 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5">
             <TextBlock Text="Owner: " VerticalAlignment="Center"/>
-            <TextBox x:Name="ownerName" HorizontalAlignment="Center" Width="110" Height="25" VerticalAlignment="Center" Margin="3" VerticalContentAlignment="Center"/>
-            <Button x:Name="initializeOwner" Content="Initialize" Height="25" Width="65"/>
+            <TextBox x:Name="ownerName" HorizontalAlignment="Center" Width="110" Height="25" VerticalAlignment="Center" Margin="3" VerticalContentAlignment="Center" TextChanged="ownerName_TextChanged"/>
+            <Button x:Name="initializeOwner" Content="Initialize" Height="25" Width="65" Click="initializeOwner_Click" IsEnabled="False"/>
         </StackPanel>
         <TextBlock x:Name="walletMoney" Text="00" FontSize="60" Foreground="Blue" Grid.Row="1" HorizontalAlignment="Center"/>
         <TextBlock Text="Add to wallet: " Grid.Row="2" Margin="5"/>
-        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5">
-            
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5" HorizontalAlignment="Center">
+            <Button x:Name="Add1" Height="25" Width="25" Content="1" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add2" Height="25" Width="25" Content="2" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add5" Height="25" Width="25" Content="5" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add10" Height="25" Width="25" Content="10" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add20" Height="25" Width="25" Content="20" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add50" Height="25" Width="25" Content="50" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add100" Height="25" Width="25" Content="100" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
+            <Button x:Name="Add200" Height="25" Width="25" Content="200" Click="ButtonAdd_Click" IsEnabled="False" Margin="2"/>
         </StackPanel>
     </Grid>
 </Window>
