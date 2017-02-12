@@ -1,0 +1,28 @@
+﻿<Window x:Class="DelegateCallbacks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DelegateCallbacks"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        x:Name="_this"
+        mc:Ignorable="d"
+        Title="Callbacks" Height="200" Width="200"
+        Background="DarkGray" ResizeMode="NoResize">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock Text="Iterations: "/>
+            <TextBox x:Name="iterationsQTY" Width="50" MaxLength="5"/>
+            <Button x:Name="runProcess" Content="Run!" Margin="15,0,0,0" Width="50" Click="runProcess_Click"/>
+        </StackPanel>
+        <TextBlock x:Name="iterationNo" Foreground="DarkBlue" 
+                   Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="60" FontWeight="Bold" Text="x" />
+        <ProgressBar x:Name="progress" HorizontalAlignment="Stretch" Height="20" Grid.Row="2" IsEnabled="False" Minimum="0"/>
+    </Grid>
+</Window>

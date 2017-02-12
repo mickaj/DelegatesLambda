@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncActionPredicate", "Func
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{9B5F4675-06B2-4B26-A977-D0A148BC52E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateCallbacks", "DelegateCallbacks\DelegateCallbacks.csproj", "{A2B467F2-DBCA-4FAB-B5BE-A93E453B8F92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9B5F4675-06B2-4B26-A977-D0A148BC52E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5F4675-06B2-4B26-A977-D0A148BC52E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5F4675-06B2-4B26-A977-D0A148BC52E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B467F2-DBCA-4FAB-B5BE-A93E453B8F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B467F2-DBCA-4FAB-B5BE-A93E453B8F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B467F2-DBCA-4FAB-B5BE-A93E453B8F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B467F2-DBCA-4FAB-B5BE-A93E453B8F92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
